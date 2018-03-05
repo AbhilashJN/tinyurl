@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "abhilash",
+    "password": "abhi",
+    "database": "tinyurl_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "abhilash",
+    "password": "abhi",
+    "database": "tinyurl_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "abhilash",
+    "password": "abhi",
+    "database": "tinyurl_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
