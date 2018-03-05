@@ -2,6 +2,12 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => queryInterface.createTable('tinyurls', {
+    id: {
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: Sequelize.INTEGER,
+    },
     longurl: {
       type: Sequelize.STRING,
       unique: true,
@@ -10,7 +16,7 @@ module.exports = {
     shorturl: {
       allowNull: false,
       type: Sequelize.STRING,
-      primaryKey: true,
+      unique: true,
     },
     createdAt: {
       allowNull: false,
