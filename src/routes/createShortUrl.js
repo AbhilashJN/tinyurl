@@ -4,6 +4,7 @@ const urlGenerators = require('../helpers/urlGenerator');
 
 const insertOrFind = (longUrl, startIndex) => {
   const short = urlGenerators.generateShortUrl(longUrl, startIndex, 6);
+  console.log(short);
   return Models.tinyurl.createObject(longUrl, short)
     .spread((urlRow, created) => {
       if (created) {

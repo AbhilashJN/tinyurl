@@ -1,7 +1,7 @@
 const crypto = require('crypto');
 
 const generateShortUrl = (longUrl, startIndex, length) => {
-  const hash = crypto.createHash('md5').update(longUrl).digest('hex');
+  const hash = crypto.createHash('md5').update(longUrl).digest('base64').replace(/\//g, '_');
   return hash.slice(startIndex, startIndex + length);
 };
 
@@ -10,10 +10,12 @@ const generateUrlPairs = (longUrls) => {
   const urlPairs = [];
   const shortUrls = new Set();
   longUrls.forEach((longUrl) => {
-    let hash = crypto.createHash('md5').update(longUrl).digest('hex').slice(0, 6);
+    let hash = crypto.createHash('md5').update(longUrl).digest('base64').replace(/\//g, '_')
+      .slice(0, 6);
     let i = 0;
     while (shortUrls.has(hash)) {
-      hash = crypto.createHash('md5').update(longUrl).digest('hex').slice(i, i + 6);
+      hash = crypto.createHash('md5').update(longUrl).digest('base64').replace(/\//g, '_')
+        .slice(i, i + 6);
       i += 6;
     }
     shortUrls.add(hash);
