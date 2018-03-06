@@ -1,11 +1,12 @@
 
-
+const Models = require('../models');
 const urlGenerator = require('../src/helpers/urlGenerator');
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
     const longUrls = urlGenerator.generateLongUrls();
     const urlPairs = urlGenerator.generateUrlPairs(longUrls);
+    // return Models.tinyurl.bulkCreate(urlPairs);
     return queryInterface.bulkInsert('tinyurls', urlPairs, {});
     /*
       Add altering commands here.
