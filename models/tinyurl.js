@@ -13,16 +13,8 @@ module.exports = (sequelize, DataTypes) => {
     },
   }, {});
 
-  tinyurl.createObject = (longUrl, shortUrl) => {
-    tinyurl.findOrCreate({ where: { shorturl: shortUrl }, defaults: { longurl: longUrl } })
-      .spread((urlRow, created) => {
-        if (created) {
-          return true;
-        }
-
-        return false;
-      });
-  };
+  tinyurl.createObject = (longUrl, shortUrl) =>
+    tinyurl.findOrCreate({ where: { shorturl: shortUrl }, defaults: { longurl: longUrl } });
 
   tinyurl.associate = function (models) {
     // associations can be defined here

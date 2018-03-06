@@ -1,10 +1,11 @@
-'use strict';
-const urlGenerator = require('../src/helpers/urlGenerator')
+
+
+const urlGenerator = require('../src/helpers/urlGenerator');
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    let longUrls = urlGenerator.generateLongUrls();
-    let urlPairs = urlGenerator.generateUrlPairs(longUrls);
+    const longUrls = urlGenerator.generateLongUrls();
+    const urlPairs = urlGenerator.generateUrlPairs(longUrls);
     return queryInterface.bulkInsert('tinyurls', urlPairs, {});
     /*
       Add altering commands here.
@@ -18,8 +19,8 @@ module.exports = {
     */
   },
 
-  down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('tinyurls', null, {});
+  down: (queryInterface, Sequelize) =>
+    queryInterface.bulkDelete('tinyurls', null, {})
     /*
       Add reverting commands here.
       Return a promise to correctly handle asynchronicity.
@@ -27,5 +28,5 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('Person', null, {});
     */
-  }
+  ,
 };

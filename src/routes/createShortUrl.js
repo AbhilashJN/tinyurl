@@ -1,23 +1,32 @@
 const crypto = require('crypto');
 const Models = require('../../models');
+const urlGenerators = require('../helpers/urlGenerator');
+
+const insertOrFind = (longUrl, startIndex) => {
+  const short = urlGenerators.generateShortUrl(longUrl, startIndex, 6);
+  return Models.tinyurl.createObject(longUrl, short)
+    .spread((urlRow, created) => {
+      if (created) {
+        return (urlRow.dataValues);
+      }
+
+      if (urlRow.dataValues.longurl === longUrl) {
+        return (urlRow.dataValues);
+      }
+
+      return insertOrFind(longUrl, startIndex + 6);
+    });
+};
+
 
 module.exports = [
   {
     path: '/createShortUrl',
     method: 'POST',
     handler: (request, reply) => {
-      const longUrl = request.payload.longUrl;
-      let i = 0;
-
-      const shortUrl = crypto.createHash('md5').update(longUrl).digest('hex').slice(i, i + 6);
-      Models.tinyurl.findOrCreate({ where: { shorturl: shortUrl }, defaults: { longurl: longUrl } })
-        .spread((urlRow, created) => {
-          if (created) {
-            reply(urlRow.dataValues);
-          } else {
-            i += 6;
-          }
-        });
+      const { longUrl } = request.payload;
+      const result = insertOrFind(longUrl, 0);
+      result.then(reply);
     },
   },
 ];
