@@ -1,113 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1520320027751" clover="3.2.0">
-  <project timestamp="1520320027751" name="All files">
-    <metrics statements="78" coveredstatements="73" conditionals="17" coveredconditionals="11" methods="14" coveredmethods="13" elements="109" coveredelements="97" complexity="0" loc="78" ncloc="78" packages="4" files="6" classes="6">
+<coverage generated="1520495015486" clover="3.2.0">
+  <project timestamp="1520495015486" name="All files">
+    <metrics statements="101" coveredstatements="93" conditionals="23" coveredconditionals="15" methods="19" coveredmethods="17" elements="143" coveredelements="125" complexity="0" loc="101" ncloc="101" packages="4" files="8" classes="8">
       <package name="models">
         <metrics statements="26" coveredstatements="25" conditionals="9" coveredconditionals="6" methods="6" coveredmethods="6"/>
         <file name="index.js" path="/Users/abhilashnambissan/tinyurl/models/index.js">
           <metrics statements="20" coveredstatements="19" conditionals="9" coveredconditionals="6" methods="3" coveredmethods="3"/>
-          <line num="3" count="2" type="stmt"/>
-          <line num="4" count="2" type="stmt"/>
-          <line num="5" count="2" type="stmt"/>
-          <line num="6" count="2" type="stmt"/>
-          <line num="7" count="2" type="cond" truecount="1" falsecount="1"/>
-          <line num="8" count="2" type="stmt"/>
-          <line num="9" count="2" type="stmt"/>
-          <line num="11" count="2" type="cond" truecount="1" falsecount="1"/>
+          <line num="3" count="3" type="stmt"/>
+          <line num="4" count="3" type="stmt"/>
+          <line num="5" count="3" type="stmt"/>
+          <line num="6" count="3" type="stmt"/>
+          <line num="7" count="3" type="cond" truecount="1" falsecount="1"/>
+          <line num="8" count="3" type="stmt"/>
+          <line num="9" count="3" type="stmt"/>
+          <line num="11" count="3" type="cond" truecount="1" falsecount="1"/>
           <line num="12" count="0" type="stmt"/>
-          <line num="14" count="2" type="stmt"/>
-          <line num="17" count="2" type="stmt"/>
-          <line num="20" count="4" type="cond" truecount="3" falsecount="0"/>
-          <line num="23" count="2" type="stmt"/>
-          <line num="24" count="2" type="stmt"/>
-          <line num="27" count="2" type="stmt"/>
-          <line num="28" count="2" type="cond" truecount="1" falsecount="1"/>
-          <line num="29" count="2" type="stmt"/>
-          <line num="33" count="2" type="stmt"/>
-          <line num="34" count="2" type="stmt"/>
-          <line num="36" count="2" type="stmt"/>
+          <line num="14" count="3" type="stmt"/>
+          <line num="17" count="3" type="stmt"/>
+          <line num="20" count="6" type="cond" truecount="3" falsecount="0"/>
+          <line num="23" count="3" type="stmt"/>
+          <line num="24" count="3" type="stmt"/>
+          <line num="27" count="3" type="stmt"/>
+          <line num="28" count="3" type="cond" truecount="1" falsecount="1"/>
+          <line num="29" count="3" type="stmt"/>
+          <line num="33" count="3" type="stmt"/>
+          <line num="34" count="3" type="stmt"/>
+          <line num="36" count="3" type="stmt"/>
         </file>
         <file name="tinyurl.js" path="/Users/abhilashnambissan/tinyurl/models/tinyurl.js">
           <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-          <line num="2" count="2" type="stmt"/>
-          <line num="3" count="2" type="stmt"/>
-          <line num="16" count="2" type="stmt"/>
-          <line num="17" count="5" type="stmt"/>
-          <line num="19" count="2" type="stmt"/>
-          <line num="22" count="2" type="stmt"/>
+          <line num="2" count="3" type="stmt"/>
+          <line num="3" count="3" type="stmt"/>
+          <line num="16" count="3" type="stmt"/>
+          <line num="17" count="7" type="stmt"/>
+          <line num="19" count="3" type="stmt"/>
+          <line num="22" count="3" type="stmt"/>
         </file>
       </package>
       <package name="src">
-        <metrics statements="11" coveredstatements="7" conditionals="4" coveredconditionals="1" methods="1" coveredmethods="0"/>
+        <metrics statements="15" coveredstatements="10" conditionals="6" coveredconditionals="2" methods="2" coveredmethods="1"/>
         <file name="server.js" path="/Users/abhilashnambissan/tinyurl/src/server.js">
-          <metrics statements="11" coveredstatements="7" conditionals="4" coveredconditionals="1" methods="1" coveredmethods="0"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="2" count="1" type="stmt"/>
-          <line num="4" count="1" type="stmt"/>
-          <line num="6" count="1" type="stmt"/>
-          <line num="11" count="1" type="stmt"/>
-          <line num="13" count="1" type="cond" truecount="1" falsecount="1"/>
-          <line num="14" count="0" type="stmt"/>
-          <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="16" count="0" type="stmt"/>
-          <line num="18" count="0" type="stmt"/>
-          <line num="22" count="1" type="stmt"/>
+          <metrics statements="15" coveredstatements="10" conditionals="6" coveredconditionals="2" methods="2" coveredmethods="1"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
+          <line num="13" count="2" type="stmt"/>
+          <line num="30" count="2" type="cond" truecount="1" falsecount="1"/>
+          <line num="31" count="0" type="stmt"/>
+          <line num="35" count="2" type="cond" truecount="1" falsecount="1"/>
+          <line num="36" count="0" type="stmt"/>
+          <line num="37" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="38" count="0" type="stmt"/>
+          <line num="40" count="0" type="stmt"/>
+          <line num="44" count="2" type="stmt"/>
         </file>
       </package>
       <package name="src.helpers">
         <metrics statements="23" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <file name="urlGenerator.js" path="/Users/abhilashnambissan/tinyurl/src/helpers/urlGenerator.js">
           <metrics statements="23" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-          <line num="1" count="2" type="stmt"/>
-          <line num="3" count="2" type="stmt"/>
-          <line num="4" count="5" type="stmt"/>
-          <line num="5" count="5" type="stmt"/>
-          <line num="9" count="2" type="stmt"/>
-          <line num="10" count="1" type="stmt"/>
+          <line num="1" count="3" type="stmt"/>
+          <line num="4" count="3" type="stmt"/>
+          <line num="5" count="7" type="stmt"/>
+          <line num="6" count="7" type="stmt"/>
+          <line num="10" count="3" type="stmt"/>
           <line num="11" count="1" type="stmt"/>
           <line num="12" count="1" type="stmt"/>
-          <line num="13" count="1000000" type="stmt"/>
-          <line num="15" count="1000000" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="14" count="1000000" type="stmt"/>
           <line num="16" count="1000000" type="stmt"/>
-          <line num="17" count="14" type="stmt"/>
-          <line num="19" count="14" type="stmt"/>
-          <line num="21" count="1000000" type="stmt"/>
+          <line num="17" count="1000000" type="stmt"/>
+          <line num="18" count="14" type="stmt"/>
+          <line num="20" count="14" type="stmt"/>
           <line num="22" count="1000000" type="stmt"/>
-          <line num="26" count="1" type="stmt"/>
-          <line num="29" count="2" type="stmt"/>
-          <line num="30" count="2" type="stmt"/>
-          <line num="31" count="2" type="stmt"/>
-          <line num="32" count="2000000" type="stmt"/>
-          <line num="33" count="2000000" type="stmt"/>
-          <line num="36" count="2" type="stmt"/>
-          <line num="40" count="2" type="stmt"/>
+          <line num="25" count="1000000" type="stmt"/>
+          <line num="29" count="1" type="stmt"/>
+          <line num="32" count="3" type="stmt"/>
+          <line num="33" count="2" type="stmt"/>
+          <line num="34" count="2" type="stmt"/>
+          <line num="35" count="2000000" type="stmt"/>
+          <line num="36" count="2000000" type="stmt"/>
+          <line num="39" count="2" type="stmt"/>
+          <line num="43" count="3" type="stmt"/>
         </file>
       </package>
       <package name="src.routes">
-        <metrics statements="18" coveredstatements="18" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <metrics statements="37" coveredstatements="35" conditionals="8" coveredconditionals="7" methods="7" coveredmethods="6"/>
         <file name="createShortUrl.js" path="/Users/abhilashnambissan/tinyurl/src/routes/createShortUrl.js">
           <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="2" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
-          <line num="5" count="1" type="stmt"/>
-          <line num="6" count="5" type="stmt"/>
-          <line num="7" count="5" type="stmt"/>
-          <line num="8" count="5" type="stmt"/>
-          <line num="10" count="5" type="cond" truecount="2" falsecount="0"/>
-          <line num="11" count="3" type="stmt"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="6" count="7" type="stmt"/>
+          <line num="7" count="7" type="stmt"/>
+          <line num="8" count="7" type="stmt"/>
+          <line num="10" count="7" type="cond" truecount="2" falsecount="0"/>
+          <line num="11" count="5" type="stmt"/>
           <line num="14" count="2" type="cond" truecount="2" falsecount="0"/>
           <line num="15" count="1" type="stmt"/>
           <line num="18" count="1" type="stmt"/>
-          <line num="23" count="1" type="stmt"/>
-          <line num="28" count="4" type="stmt"/>
-          <line num="29" count="4" type="stmt"/>
-          <line num="30" count="4" type="stmt"/>
+          <line num="23" count="2" type="stmt"/>
+          <line num="28" count="6" type="stmt"/>
+          <line num="29" count="6" type="stmt"/>
+          <line num="30" count="6" type="stmt"/>
         </file>
         <file name="index.js" path="/Users/abhilashnambissan/tinyurl/src/routes/index.js">
-          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
+          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+        </file>
+        <file name="ping.js" path="/Users/abhilashnambissan/tinyurl/src/routes/ping.js">
+          <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+        </file>
+        <file name="readLongUrl.js" path="/Users/abhilashnambissan/tinyurl/src/routes/readLongUrl.js">
+          <metrics statements="14" coveredstatements="13" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="3"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="11" count="3" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
+          <line num="13" count="3" type="stmt"/>
+          <line num="14" count="3" type="cond" truecount="1" falsecount="1"/>
+          <line num="15" count="3" type="stmt"/>
+          <line num="16" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="19" count="2" type="stmt"/>
+          <line num="20" count="2" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
         </file>
       </package>
     </metrics>

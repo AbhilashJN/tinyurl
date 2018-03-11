@@ -1,5 +1,6 @@
 const crypto = require('crypto');
 
+
 const generateShortUrl = (longUrl, startIndex, length) => {
   const hash = crypto.createHash('md5').update(longUrl).digest('base64').replace(/\//g, '_');
   return hash.slice(startIndex, startIndex + length);
@@ -19,6 +20,8 @@ const generateUrlPairs = (longUrls) => {
       i += 6;
     }
     shortUrls.add(hash);
+
+
     urlPairs.push({
       longurl: longUrl, shorturl: hash, createdAt: new Date(), updatedAt: new Date(),
     });

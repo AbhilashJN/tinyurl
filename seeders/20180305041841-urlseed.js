@@ -1,5 +1,3 @@
-
-const Models = require('../models');
 const urlGenerator = require('../src/helpers/urlGenerator');
 
 module.exports = {
