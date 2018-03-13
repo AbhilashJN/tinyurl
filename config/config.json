@@ -22,5 +22,12 @@
     "database": "tinyurl_production",
     "host": "127.0.0.1",
     "dialect": "postgres"
+  }, 
+  "circleci_test": {
+    "username": "postgres",
+    "password": "root",
+    "database": "tinyurl_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
   }
 }
