@@ -1,5 +1,5 @@
 const handler = (request, reply) => {
-  reply('pong');
+  reply('pongs');
 };
 
 module.exports = {
